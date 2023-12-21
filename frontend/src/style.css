@@ -1,0 +1,223 @@
+/* Home page */
+
+.home {
+  padding: 10px;
+}
+.home .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.home .header h1 {
+  font-size: 2.5rem;
+  margin: 20px;
+  color: saddlebrown;
+}
+.home .header .header-icon {
+  color: saddlebrown;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 0.7rem;
+}
+.card-container .item-map {
+  border: 2px solid saddlebrown;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 10px;
+  position: relative;
+}
+.card-container .item-map:hover {
+  box-shadow: saddlebrown;
+}
+.item-img {
+  width: 100%;
+  height: 350px;
+}
+.item-year {
+  position: absolute;
+  top: 63%;
+  right: 4%;
+  padding: 5px;
+  background-color: brown;
+  color: #fff;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.item-id {
+  margin: 5px;
+  margin-bottom: 20px;
+  color: grey;
+  margin-top: 20px;
+}
+.item-box {
+  margin-bottom: 20px;
+}
+.read-book {
+  color: sienna;
+  font-size: 1.1rem;
+}
+.item-title {
+  margin: 5px;
+}
+.icon-links {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 3px;
+  margin: 5px;
+  padding: 8px;
+}
+.icons {
+  font-size: 1.2rem;
+}
+
+.home .table {
+  width: 90vw;
+  border: 2px solid;
+  border-collapse: separate;
+  border-collapse: collapse;
+}
+
+/* create book page */
+.create-book,
+.delete-book {
+  padding: 15px;
+}
+.create-book h1,
+.delete-book h1 {
+  font-size: 2rem;
+  margin: 15px;
+}
+.create-book .form-container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid saddlebrown;
+  border-radius: 10px;
+  width: 50vw;
+  padding: 5px;
+}
+.create-book .form-container .form-box {
+  margin: 5px;
+}
+.create-book .form-container .form-box .label {
+  font-size: 1.1rem;
+  margin: 5px;
+  color: saddlebrown;
+  font-weight: 500;
+}
+.create-book .form-container .form-box .form-input {
+  border: 1px solid saddlebrown;
+  margin: 10px;
+  padding: 10px;
+  width: 45vw;
+}
+.create-book .form-container .create-button {
+  padding: 10px;
+  background-color: saddlebrown;
+  color: white;
+  margin: 20px;
+}
+
+/* delete page */
+.delete-book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid saddlebrown;
+  border-radius: 5px;
+  width: 70vw;
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+.delete-book-container h3 {
+  font-size: 1.7rem;
+}
+
+.delete-book-container button {
+  padding: 10px;
+  background-color: red;
+  color: white;
+  margin: 25px;
+  width: 200px;
+}
+
+/* show page */
+
+.back-button-link {
+  background-color: saddlebrown;
+  margin: 15px;
+  font-weight: 800;
+  color: #f0f8ff;
+  align-items: center;
+  text-align: center;
+  width: fit-content;
+  border: 2px solid;
+  border-radius: 30px;
+  padding-top: 15px;
+}
+.back-button-arrow {
+  font-size: 2rem;
+}
+
+.show-book {
+  padding: 20px;
+}
+.show-book h1 {
+  font-size: 2.5rem;
+  margin: 35px;
+}
+.show-book .container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid saddlebrown;
+  border-radius: 5px;
+  width: 30vw;
+  padding: 15px;
+  align-items: center;
+}
+.show-book .item-container {
+  margin: 10px;
+}
+.show-book .item-container .item-title {
+  font-size: 1.1rem;
+  margin-right: 5px;
+  color: gray;
+  font-weight: 500;
+}
+@media only screen and (max-width: 700px) {
+  .hidden-item {
+    display: none;
+  }
+  .create-book .form-container .form-box .form-input {
+    width: 70vw;
+  }
+  .show-book {
+    padding: 5px;
+  }
+  .show-book .container {
+    width: 80vw;
+    margin-left: 0px;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  .item-id {
+    margin-top: 60px;
+  }
+  .item-year {
+    top: 58%;
+    right: 4%;
+  }
+  .create-book .form-container {
+    width: 85vw;
+  }
+}
